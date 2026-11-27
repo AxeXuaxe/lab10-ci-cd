@@ -60,7 +60,7 @@ def test_form_fields_and_button(driver, base_url):
     assert driver.find_element(By.ID, "email").is_displayed()
     assert driver.find_element(By.ID, "password").is_displayed()
     button = driver.find_element(By.ID, "submit-btn")
-    assert button.text.strip() == "Отправить"
+    assert button.text.strip() == "Зарегистрироваться"
     assert driver.find_element(By.ID, "success").is_displayed() is False
 
 
